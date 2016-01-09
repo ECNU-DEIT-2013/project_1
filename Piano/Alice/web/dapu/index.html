@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Alice</title>
+  <link  rel="stylesheet" href="styles.css">
+  <script async type="application/dart" src="main.dart"></script>
+  <script async src="packages/browser/dart.js"></script>
+</head>
+
+
+
+<style>
+  body {
+    font-family: cursive;
+    font-size: 20px;
+    color: #3498db;
+    font-weight: bold;
+    background-repeat:no-repeat;
+    background-image: url(../picture/web.png);
+    background-position:50% 0%;
+    background-color: #061c43;
+    background-attachment:fixed;
+  }
+
+
+</style>
+
+<audio src="1Re.mp3" id="Re" ></audio>
+<audio src="1Mi.mp3" id="Mi" ></audio>
+<audio src="1Fa.mp3" id="Fa" ></audio>
+<audio src="1Sol.mp3" id="Sol" ></audio>
+<audio src="1La.mp3" id="La" ></audio>
+<audio src="1Xi.mp3" id="Xi" ></audio>
+<audio src="1Dol.mp3" id="Dol" ></audio>
+<audio src="0fa.mp3" id="fai" ></audio>
+<audio src="0sol.mp3" id="soli" ></audio>
+<audio src="0la.mp3" id="lai" ></audio>
+<audio src="0xi.mp3" id="xii" ></audio>
+<audio src="2dol.mp3" id="doli" ></audio>
+<audio src="2rel.mp3" id="reli" ></audio>
+<audio src="2mi.mp3" id="mii" ></audio>
+
+<img  id=1G data-src="../picture/qingjian2.png"  style="position: absolute;left: 24%;top:56.5%"i)  >
+<img id=1A data-src="../picture/qingjian2.png"  style="position: absolute;left: 28.45%;top:56.5%"i)  >
+<img id=2D data-src="../picture/qingjian2.png"  style="position: absolute;left: 41.85%;top:56.5%"i)  >
+<img id=2G data-src="../picture/qingjian2.png"  style="position: absolute;left: 55.3%;top:56.5%"i)  >
+<img id=2A data-src="../picture/qingjian2.png"  style="position: absolute;left: 59.75%;top:56.5%"i)  >
+<img id=3D data-src="../picture/qingjian2.png"  style="position: absolute;left: 73.2%;top:56.5%"i)  >
+<img id=1F data-src="../picture/qingjian3.png"  style="position: absolute;left: 19.45%;top:56.5%"i)  >
+<img id=2C data-src="../picture/qingjian3.png"  style="position: absolute;left: 37.45%;top:56.5%"i)  >
+<img id=2F data-src="../picture/qingjian3.png"  style="position: absolute;left: 50.83%;top:56.5%"i)  >
+<img id=3C data-src="../picture/qingjian3.png"  style="position: absolute;left: 68.75%;top:56.5%"i)  >
+<img id=1B data-src="../picture/qingjian4.png"  style="position: absolute;left: 32.8%;top:56.5%"i)  >
+<img id=2E data-src="../picture/qingjian4.png"  style="position: absolute;left: 46.3%;top:56.5%"i)  >
+<img id=2B data-src="../picture/qingjian4.png"  style="position: absolute;left: 64.2%;top:56.5%"i)  >
+<img id=3E data-src="../picture/qingjian4.png"  style="position: absolute;left: 77.65%;top:56.5%"i)  >
+
+
+<div id="yingfu">
+<img id=1Re data-src="../picture/yingfu.png"  style="position: absolute;left: 50%;top:18.5%"i)  >
+<img id=1Mi data-src="../picture/yingfu.png"  style="position: absolute;left: 55%;top:17.5%"i)  >
+<img id=1Fa data-src="../picture/yingfu.png"  style="position: absolute;left: 60%;top:16.5%"i)  >
+<img id=1Sol data-src="../picture/yingfu.png"  style="position: absolute;left: 65%;top:15.5%"i)  >
+<img id=1La data-src="../picture/yingfu.png"  style="position: absolute;left: 70%;top:14.5%"i)  >
+<img id=1Xi data-src="../picture/yingfu.png"  style="position: absolute;left: 75%;top:13.5%"i)  >
+<img id=1Dol data-src="../picture/yinfu2.png"  style="position: absolute;left: 45%;top:19.5%"i)  >
+
+  <img id=2Dol data-src="../picture/yingfu.png"  style="position: absolute;left: 25%;top:31.2%"i)  >
+  <img id=2Re data-src="../picture/yingfu.png"  style="position: absolute;left: 30%;top:30.2%"i)  >
+  <img id=2Mi data-src="../picture/yingfu.png"  style="position: absolute;left: 35%;top:29.2%"i)  >
+  <img id=0Xi data-src="../picture/XIII.png"  style="position: absolute;left: 40%;top:20.5%"i)  >
+  <img id=0La data-src="../picture/LAII.png"  style="position: absolute;left: 35%;top:21.5%"i)  >
+  <img id=0Sol data-src="../picture/SOLII.png"  style="position: absolute;left: 30%;top:22.5%"i)  >
+  <img id=0Fa data-src="../picture/FAII.png"  style="position: absolute;left: 25%;top:23.5%"i)  >
+</div>
+
+<audio src="../picture/see-you-again.mp3" id="audio" ></audio>
+
+
+<script type="text/javascript" language=JavaScript charset="UTF-8">
+
+  function mouseOver()
+  {
+    document.b1.src ="../picture/bofang2.png"
+  }
+  function mouseOut()
+  {
+    document.b1.src ="../picture/bofang.png"
+  }
+
+  document.getElementById('1F').style.visibility = 'hidden';
+  document.getElementById('1G').style.visibility = 'hidden';
+  document.getElementById('1A').style.visibility = 'hidden';
+  document.getElementById('1B').style.visibility = 'hidden';
+  document.getElementById('2C').style.visibility = 'hidden';
+  document.getElementById('2D').style.visibility = 'hidden';
+  document.getElementById('2E').style.visibility = 'hidden';
+  document.getElementById('2F').style.visibility = 'hidden';
+  document.getElementById('2G').style.visibility = 'hidden';
+  document.getElementById('2A').style.visibility = 'hidden';
+  document.getElementById('2B').style.visibility = 'hidden';
+  document.getElementById('3C').style.visibility = 'hidden';
+  document.getElementById('3D').style.visibility = 'hidden';
+  document.getElementById('3E').style.visibility = 'hidden';
+
+  document.getElementById('1Re').style.visibility = 'hidden';
+  document.getElementById('1Mi').style.visibility = 'hidden';
+  document.getElementById('1Fa').style.visibility = 'hidden';
+  document.getElementById('1Sol').style.visibility = 'hidden';
+  document.getElementById('1La').style.visibility = 'hidden';
+  document.getElementById('1Xi').style.visibility = 'hidden';
+  document.getElementById('1Dol').style.visibility = 'hidden';
+  document.getElementById('2Dol').style.visibility = 'hidden';
+  document.getElementById('2Re').style.visibility = 'hidden';
+  document.getElementById('2Mi').style.visibility = 'hidden';
+  document.getElementById('0Xi').style.visibility = 'hidden';
+  document.getElementById('0La').style.visibility = 'hidden';
+  document.getElementById('0Sol').style.visibility = 'hidden';
+  document.getElementById('0Fa').style.visibility = 'hidden';
+
+
+  document.onkeydown=function(){
+    var e = event || window.event || arguments.callee.caller.arguments[0];
+    if(e && e.keyCode==68){
+      Re.play();
+      document.getElementById('2D').style.visibility ="visible";
+      document.getElementById('1Re').style.visibility ="visible";
+      document.getElementById('2E').style.visibility = 'hidden';
+      document.getElementById('2F').style.visibility = 'hidden';
+      document.getElementById('2G').style.visibility = 'hidden';
+      document.getElementById('2A').style.visibility = 'hidden';
+      document.getElementById('2B').style.visibility = 'hidden';
+      document.getElementById('2C').style.visibility = 'hidden';
+      document.getElementById('1F').style.visibility = 'hidden';
+      document.getElementById('1G').style.visibility = 'hidden';
+      document.getElementById('1A').style.visibility = 'hidden';
+      document.getElementById('1B').style.visibility = 'hidden';
+      document.getElementById('3C').style.visibility = 'hidden';
+      document.getElementById('3D').style.visibility = 'hidden';
+      document.getElementById('3E').style.visibility = 'hidden';
+    }
+    if(e && e.keyCode==70){
+      Mi.play();
+      document.getElementById('2E').style.visibility ="visible";
+      document.getElementById('1Mi').style.visibility ="visible";
+      document.getElementById('2D').style.visibility = 'hidden';
+      document.getElementById('2F').style.visibility = 'hidden';
+      document.getElementById('2G').style.visibility = 'hidden';
+      document.getElementById('2A').style.visibility = 'hidden';
+      document.getElementById('2B').style.visibility = 'hidden';
+      document.getElementById('2C').style.visibility = 'hidden';
+      document.getElementById('1F').style.visibility = 'hidden';
+      document.getElementById('1G').style.visibility = 'hidden';
+      document.getElementById('1A').style.visibility = 'hidden';
+      document.getElementById('1B').style.visibility = 'hidden';
+      document.getElementById('3C').style.visibility = 'hidden';
+      document.getElementById('3D').style.visibility = 'hidden';
+      document.getElementById('3E').style.visibility = 'hidden';
+    }
+    if(e && e.keyCode==71){
+      Fa.play();
+      document.getElementById('2F').style.visibility ="visible";
+      document.getElementById('1Fa').style.visibility ="visible";
+      document.getElementById('2D').style.visibility = 'hidden';
+      document.getElementById('2E').style.visibility = 'hidden';
+      document.getElementById('2G').style.visibility = 'hidden';
+      document.getElementById('2A').style.visibility = 'hidden';
+      document.getElementById('2B').style.visibility = 'hidden';
+      document.getElementById('2C').style.visibility = 'hidden';
+      document.getElementById('1F').style.visibility = 'hidden';
+      document.getElementById('1G').style.visibility = 'hidden';
+      document.getElementById('1A').style.visibility = 'hidden';
+      document.getElementById('1B').style.visibility = 'hidden';
+      document.getElementById('3C').style.visibility = 'hidden';
+      document.getElementById('3D').style.visibility = 'hidden';
+      document.getElementById('3E').style.visibility = 'hidden';
+    }
+    if(e && e.keyCode==72){
+      Sol.play();
+      document.getElementById('2G').style.visibility ="visible";
+      document.getElementById('1Sol').style.visibility ="visible";
+      document.getElementById('2D').style.visibility = 'hidden';
+      document.getElementById('2E').style.visibility = 'hidden';
+      document.getElementById('2F').style.visibility = 'hidden';
+      document.getElementById('2A').style.visibility = 'hidden';
+      document.getElementById('2B').style.visibility = 'hidden';
+      document.getElementById('2C').style.visibility = 'hidden';
+      document.getElementById('1F').style.visibility = 'hidden';
+      document.getElementById('1G').style.visibility = 'hidden';
+      document.getElementById('1A').style.visibility = 'hidden';
+      document.getElementById('1B').style.visibility = 'hidden';
+      document.getElementById('3C').style.visibility = 'hidden';
+      document.getElementById('3D').style.visibility = 'hidden';
+      document.getElementById('3E').style.visibility = 'hidden';
+    }
+    if(e && e.keyCode==74){
+      La.play();
+      document.getElementById('2A').style.visibility ="visible";
+      document.getElementById('1La').style.visibility ="visible";
+      document.getElementById('2D').style.visibility = 'hidden';
+      document.getElementById('2E').style.visibility = 'hidden';
+      document.getElementById('2F').style.visibility = 'hidden';
+      document.getElementById('2G').style.visibility = 'hidden';
+      document.getElementById('2B').style.visibility = 'hidden';
+      document.getElementById('2C').style.visibility = 'hidden';
+      document.getElementById('1F').style.visibility = 'hidden';
+      document.getElementById('1G').style.visibility = 'hidden';
+      document.getElementById('1A').style.visibility = 'hidden';
+      document.getElementById('1B').style.visibility = 'hidden';
+      document.getElementById('3C').style.visibility = 'hidden';
+      document.getElementById('3D').style.visibility = 'hidden';
+      document.getElementById('3E').style.visibility = 'hidden';
+    }
+    if(e && e.keyCode==75){
+      Xi.play();
+      document.getElementById('2B').style.visibility ="visible";
+      document.getElementById('1Xi').style.visibility ="visible";
+      document.getElementById('2D').style.visibility = 'hidden';
+      document.getElementById('2E').style.visibility = 'hidden';
+      document.getElementById('2F').style.visibility = 'hidden';
+      document.getElementById('2G').style.visibility = 'hidden';
+      document.getElementById('2A').style.visibility = 'hidden';
+      document.getElementById('2C').style.visibility = 'hidden';
+      document.getElementById('1F').style.visibility = 'hidden';
+      document.getElementById('1G').style.visibility = 'hidden';
+      document.getElementById('1A').style.visibility = 'hidden';
+      document.getElementById('1B').style.visibility = 'hidden';
+      document.getElementById('3C').style.visibility = 'hidden';
+      document.getElementById('3D').style.visibility = 'hidden';
+      document.getElementById('3E').style.visibility = 'hidden';
+    }
+    if(e && e.keyCode==83){
+      Dol.play();
+      document.getElementById('2C').style.visibility ="visible";
+      document.getElementById('1Dol').style.visibility ="visible";
+      document.getElementById('2B').style.visibility = 'hidden';
+      document.getElementById('2D').style.visibility = 'hidden';
+      document.getElementById('2E').style.visibility = 'hidden';
+      document.getElementById('2F').style.visibility = 'hidden';
+      document.getElementById('2G').style.visibility = 'hidden';
+      document.getElementById('2A').style.visibility = 'hidden';
+      document.getElementById('1F').style.visibility = 'hidden';
+      document.getElementById('1G').style.visibility = 'hidden';
+      document.getElementById('1A').style.visibility = 'hidden';
+      document.getElementById('1B').style.visibility = 'hidden';
+      document.getElementById('3C').style.visibility = 'hidden';
+      document.getElementById('3D').style.visibility = 'hidden';
+      document.getElementById('3E').style.visibility = 'hidden';
+    }
+
+    if(e && e.keyCode==81){
+      doli.play();
+      document.getElementById('3C').style.visibility = 'visible';
+      document.getElementById('2Dol').style.visibility ="visible";
+      document.getElementById('2B').style.visibility = 'hidden';
+      document.getElementById('2D').style.visibility = 'hidden';
+      document.getElementById('2E').style.visibility = 'hidden';
+      document.getElementById('2F').style.visibility = 'hidden';
+      document.getElementById('2G').style.visibility = 'hidden';
+      document.getElementById('2A').style.visibility = 'hidden';
+      document.getElementById('1F').style.visibility = 'hidden';
+      document.getElementById('1G').style.visibility = 'hidden';
+      document.getElementById('1A').style.visibility = 'hidden';
+      document.getElementById('1B').style.visibility = 'hidden';
+      document.getElementById('2C').style.visibility ="'hidden";
+      document.getElementById('3D').style.visibility = 'hidden';
+      document.getElementById('3E').style.visibility = 'hidden';
+    }
+
+    if(e && e.keyCode==87){
+      reli.play();
+      document.getElementById('3D').style.visibility = 'visible';
+      document.getElementById('2Re').style.visibility ="visible";
+      document.getElementById('3C').style.visibility = 'hidden';
+      document.getElementById('3E').style.visibility = 'hidden';
+      document.getElementById('2B').style.visibility = 'hidden';
+      document.getElementById('2D').style.visibility = 'hidden';
+      document.getElementById('2E').style.visibility = 'hidden';
+      document.getElementById('2F').style.visibility = 'hidden';
+      document.getElementById('2G').style.visibility = 'hidden';
+      document.getElementById('2A').style.visibility = 'hidden';
+      document.getElementById('1F').style.visibility = 'hidden';
+      document.getElementById('1G').style.visibility = 'hidden';
+      document.getElementById('1A').style.visibility = 'hidden';
+      document.getElementById('1B').style.visibility = 'hidden';
+      document.getElementById('2C').style.visibility ="'hidden";
+
+    }
+
+    if(e && e.keyCode==69){
+      mii.play();
+      document.getElementById('3E').style.visibility = 'visible';
+      document.getElementById('2Mi').style.visibility ="visible";
+      document.getElementById('3C').style.visibility = 'hidden';
+      document.getElementById('3D').style.visibility = 'hidden';
+      document.getElementById('2B').style.visibility = 'hidden';
+      document.getElementById('2C').style.visibility ="'hidden";
+      document.getElementById('2D').style.visibility = 'hidden';
+      document.getElementById('2E').style.visibility = 'hidden';
+      document.getElementById('2F').style.visibility = 'hidden';
+      document.getElementById('2G').style.visibility = 'hidden';
+      document.getElementById('2A').style.visibility = 'hidden';
+      document.getElementById('1F').style.visibility = 'hidden';
+      document.getElementById('1G').style.visibility = 'hidden';
+      document.getElementById('1A').style.visibility = 'hidden';
+      document.getElementById('1B').style.visibility = 'hidden';
+
+    }
+    if(e && e.keyCode==86){
+      fai.play();
+      document.getElementById('1F').style.visibility = 'visible';
+      document.getElementById('0Fa').style.visibility ="visible";
+      document.getElementById('2B').style.visibility = 'hidden';
+      document.getElementById('2C').style.visibility ="'hidden";
+      document.getElementById('2D').style.visibility = 'hidden';
+      document.getElementById('2E').style.visibility = 'hidden';
+      document.getElementById('2F').style.visibility = 'hidden';
+      document.getElementById('2G').style.visibility = 'hidden';
+      document.getElementById('2A').style.visibility = 'hidden';
+      document.getElementById('1G').style.visibility = 'hidden';
+      document.getElementById('1A').style.visibility = 'hidden';
+      document.getElementById('1B').style.visibility = 'hidden';
+      document.getElementById('3C').style.visibility = 'hidden';
+      document.getElementById('3D').style.visibility = 'hidden';
+      document.getElementById('3E').style.visibility = 'hidden';
+    }
+    if(e && e.keyCode==66){
+      soli.play();
+      document.getElementById('1G').style.visibility = 'visible';
+      document.getElementById('0Sol').style.visibility ="visible";
+      document.getElementById('2B').style.visibility = 'hidden';
+      document.getElementById('2D').style.visibility = 'hidden';
+      document.getElementById('2E').style.visibility = 'hidden';
+      document.getElementById('2F').style.visibility = 'hidden';
+      document.getElementById('2G').style.visibility = 'hidden';
+      document.getElementById('2A').style.visibility = 'hidden';
+      document.getElementById('1F').style.visibility = 'hidden';
+      document.getElementById('2C').style.visibility ="'hidden";
+      document.getElementById('1A').style.visibility = 'hidden';
+      document.getElementById('1B').style.visibility = 'hidden';
+      document.getElementById('3C').style.visibility = 'hidden';
+      document.getElementById('3D').style.visibility = 'hidden';
+      document.getElementById('3E').style.visibility = 'hidden';
+    }
+    if(e && e.keyCode==78){
+      lai.play();
+      document.getElementById('1A').style.visibility = 'visible';
+      document.getElementById('0La').style.visibility ="visible";
+      document.getElementById('2B').style.visibility = 'hidden';
+      document.getElementById('2D').style.visibility = 'hidden';
+      document.getElementById('2E').style.visibility = 'hidden';
+      document.getElementById('2F').style.visibility = 'hidden';
+      document.getElementById('2G').style.visibility = 'hidden';
+      document.getElementById('2A').style.visibility = 'hidden';
+      document.getElementById('1F').style.visibility = 'hidden';
+      document.getElementById('1G').style.visibility = 'hidden';
+      document.getElementById('2C').style.visibility ="'hidden";
+      document.getElementById('1B').style.visibility = 'hidden';
+      document.getElementById('3C').style.visibility = 'hidden';
+      document.getElementById('3D').style.visibility = 'hidden';
+      document.getElementById('3E').style.visibility = 'hidden';
+    }
+    if(e && e.keyCode==77){
+      xii.play();
+      document.getElementById('1B').style.visibility = 'visible';
+      document.getElementById('0Xi').style.visibility ="visible";
+      document.getElementById('2B').style.visibility = 'hidden';
+      document.getElementById('2D').style.visibility = 'hidden';
+      document.getElementById('2E').style.visibility = 'hidden';
+      document.getElementById('2F').style.visibility = 'hidden';
+      document.getElementById('2G').style.visibility = 'hidden';
+      document.getElementById('2A').style.visibility = 'hidden';
+      document.getElementById('1F').style.visibility = 'hidden';
+      document.getElementById('1G').style.visibility = 'hidden';
+      document.getElementById('1A').style.visibility = 'hidden';
+      document.getElementById('2C').style.visibility ="'hidden";
+      document.getElementById('3C').style.visibility = 'hidden';
+      document.getElementById('3D').style.visibility = 'hidden';
+      document.getElementById('3E').style.visibility = 'hidden';
+    }
+  };
+
+
+
+
+  [].forEach.call(document.querySelectorAll('img[data-src]'), function(img) {
+    img.setAttribute('src', img.getAttribute('data-src'));
+    img.onload = function() {
+      img.removeAttribute('data-src');
+    };
+  })
+</script>
+
+<body>
+<a href="../bofang/Bofang.html" target="_blank">
+  <img   src="../picture/bofang.png" name="b1"  onmouseover="mouseOver()" onmouseout="mouseOut()"  style="position: absolute;left: 92%;top:85%"i)/></a>
+</body>
+</html>

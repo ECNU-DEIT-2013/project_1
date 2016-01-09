@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Alice</title>
+    <link  rel="stylesheet" href="../dapu/styles.css">
+    <script async type="application/dart" src="../dapu/main.dart"></script>
+    <script async src="../dapu/packages/browser/dart.js"></script>
+</head>
+<style>
+    body {
+        font-family: cursive;
+        font-size: 40px;
+        color: #ffffff;
+        font-weight: bold;
+        background-repeat:no-repeat;
+        background-image: url(../picture/lianxi.png);
+        background-position:50% 0%;
+        background-color: #061c43;
+        background-attachment:fixed;
+    }
+
+
+</style>
+<div id="yingfu">
+    <img id=1Re src="../picture/yingfu.png"  style="position: absolute;left: 60%;top:18.5%"i)  >
+    <img id=1Mi src="../picture/yingfu.png"  style="position: absolute;left: 65%;top:17.5%"i)  >
+    <img id=1Fa src="../picture/yingfu.png"  style="position: absolute;left: 70%;top:16.5%"i)  >
+    <img id=1Sol src="../picture/yingfu.png"  style="position: absolute;left: 75%;top:15.5%"i)  >
+    <img id=1La src="../picture/yingfu.png"  style="position: absolute;left: 80%;top:14.5%"i)  >
+    <img id=1Xi src="../picture/yingfu.png"  style="position: absolute;left: 85%;top:13.5%"i)  >
+    <img id=1Dol src="../picture/yinfu2.png"  style="position: absolute;left: 55%;top:19.5%"i)  >
+
+    <img id=2Dol src="../picture/yingfu.png"  style="position: absolute;left: 35%;top:31.2%"i)  >
+    <img id=2Re src="../picture/yingfu.png"  style="position: absolute;left: 40%;top:30.2%"i)  >
+    <img id=2Mi src="../picture/yingfu.png"  style="position: absolute;left: 45%;top:29.2%"i)  >
+    <img id=0Xi src="../picture/XIII.png"  style="position: absolute;left: 50%;top:20.5%"i)  >
+    <img id=0La src="../picture/LAII.png"  style="position: absolute;left: 45%;top:21.5%"i)  >
+    <img id=0Sol src="../picture/SOLII.png"  style="position: absolute;left: 40%;top:22.5%"i)  >
+    <img id=0Fa src="../picture/FAII.png"  style="position: absolute;left: 35%;top:23.5%"i)  >
+</div>
+</div>
+<P>             </P>
+<a id=1 href="javascript:void(0);" onclick="playOrPaused('firefox',this);">Play</a>
+<audio src="../picture/All.mp3" id="audio" ></audio>
+<script>
+    var audio ;
+    window.onload = function(){
+        initAudio();
+    }
+    var initAudio = function(){
+        audio = document.getElementById('audio');
+    }
+
+    function playOrPaused(id,obj){
+        if(audio.paused){
+            audio.play();
+            obj.innerHTML='Stop';
+            return;
+        }
+        audio.pause();
+        obj.innerHTML='Play';
+    }
+
+</script>
+
+</html>

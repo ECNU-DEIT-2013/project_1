@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/Piano/Alice/web/bofang/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/Piano/Alice/web/dapu/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/Piano/Alice/web/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/Piano/Alice/web/picture/packages" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
